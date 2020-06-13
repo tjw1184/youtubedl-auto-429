@@ -43,7 +43,7 @@ def main() -> None:
         if not path.exists("/configs/youtube-dl-channels.txt"):
             shutil.copyfile("/youtubedl/origconfigs/youtube-dl-channels.txt","/configs/youtube-dl-channels.txt")                     
         
-        # Dirty hack to implement the 429 error workaround provided by colethedj, lock to 3-8-20 branch for now
+        # Dirty hack to implement the 429 error workaround provided by colethedj, lock to 5-29-20 branch for now
         # https://gitlab.com/colethedj/youtube-dl-429-patch
         prevdir = os.getcwd()
         os.chdir("/temp")
